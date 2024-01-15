@@ -20,6 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [RoleController::class, 'index'])->name('login');
-Route::post('/login', [RoleController::class, 'login'])->name('login');
+Route::post('/login', [RoleController::class, 'login']);
 
-Route::get('/login/admin', [AdminController::class, 'index'])->name('login');
+Route::get('/login/admin', [AdminController::class, 'index']);
